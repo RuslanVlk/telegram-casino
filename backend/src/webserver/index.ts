@@ -19,7 +19,7 @@ export default class WebAppServer {
     private readonly gameEndpoints: GameEndpoints
   ) {
     const app: Express = express()
-    const port = config.webServerPort
+    const port = Number(process.env.PORT) || config.webServerPort
 
     app.use(cors())
     app.use(express.json())
