@@ -29,7 +29,7 @@ const config: Config = {
     "mongodb.db"
   )}?ssl=true&retryWrites=true&w=majority`,
   houseEdge: nodeConfig.get<number>("houseEdge"),
-  stripeToken: nodeConfig.get<string>("stripeToken"),
+  stripeToken: nodeConfig.has("stripeToken") ? nodeConfig.get<string>("stripeToken") : "",
 }
 
 export default config
