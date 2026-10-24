@@ -42,7 +42,7 @@ const Router = createBrowserRouter(
     },
   ],
   {
-    basename: "/telegram-mini-app/",
+    basename: "/telegram-casino/",
   }
 )
 
